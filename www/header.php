@@ -1,14 +1,22 @@
 
 <link rel="stylesheet" href="stylesheet.css">
-<script type="text/javascript" src="Javascript.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-window.onload= function (){
-  var menu = document.getElementById("menu");
-  menu.style.top=getHeightByTagName("header")+"px";
-  var wrapper = document.getElementsByClassName("wrapper")[0];
-  wrapper.style.top = getHeightByTagName("header")+getHeightById("menu")+"px";
-};
-window.onresize = function(){dispatchEvent(new Event("load"))};
+$(function(){
+        // Check the initial Poistion of the Sticky Header
+        var stickyHeaderTop = $('.menu').offset().top;
+        $(window).resize(function(){stickyHeaderTop = $('.menu').offset().top;});
+
+        $(window).scroll(function(){
+              if( $(window).scrollTop() > stickyHeaderTop ) {
+                      $('.menu').css({position: 'fixed', top: '0px'});
+                      $('.menuspace').css('display', 'block');
+              } else {
+                      $('.menu').css({position: 'static', top: '0px'});
+                      $('.menuspace').css('display', 'none');
+              }
+        });
+  });
 </script>
 <div class="header">
     <div class="inner_vertical_align_middle">
@@ -32,5 +40,5 @@ window.onresize = function(){dispatchEvent(new Event("load"))};
         <a href="/" onclick="alert('MenuItem3')" class="menuItem"> MenuItem3</a>
           <a href="/" onclick="alert('MenuItem4')" class="menuItem"> MenuItem4</a>
             <a href="testQuiz.php" class="menuItem"> testQuiz</a>
-    <!--Menu content-->
   </div>
+  <div class="menuspace"></div>
