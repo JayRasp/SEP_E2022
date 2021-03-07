@@ -1,10 +1,11 @@
-.header{
+header{
   background-color: #d30002;
-  padding:  1vh 1vw 0px 1vw;
+  padding-left:  1vw;
   top: 0px;
   right: 0px;
   left: 0px;
   position: fixed;
+  z-index: 100;
 }
 img.header-logo_e22{
   height:7vh;
@@ -25,7 +26,6 @@ h1.big{
 }
 
 h1,h2,h3,h4{
-
   text-decoration: underline;
 }
 
@@ -41,19 +41,22 @@ a.menuItem{
     padding: 2vh 2vw 2vh 2vw;
     text-decoration: none;
     margin: auto;
+    border-radius: 2vh;
+    border-color: #FFFFFFFF;
+    border-style: none;
 }
 
 .menuItem:hover{
-  transition: background-color 0.5s ease, transform 0.5s ease;
+  transition: background-color 0.5s ease;
   background-color: #a00;
-  transform: scale(1.1);
 }
 
 .menu{
   background-color: #d10000;
+  transition: top 1s;
+  position: relative;
+  width: 100%;
   display: flex;
-  margin-top: 8vh;
-  padding: 3vw 0 0 0;
 }
 
 .inner_vertical_align_middle{
@@ -63,7 +66,10 @@ a.menuItem{
 
 div.main{
     background-color: #FED;
-    margin: 3vh 2.5vw 3vh 2.5vw;
+    border-style: solid;
+    border-color: #CBA;
+    border-radius: 5vh;
+    margin: 0px 2.5vw 3vh 2.5vw;
     padding: 1vh 2.5vw 2vh 2.5vw;
 }
 
@@ -73,6 +79,7 @@ p{
 
 body{
   margin: 0px 0px 0px 0px;
+  background-color: #EDC;
 }
 
 table{
