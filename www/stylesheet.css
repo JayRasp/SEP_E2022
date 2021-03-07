@@ -1,37 +1,31 @@
 .header{
   background-color: #d30002;
-  padding-left:  1vh 1vw;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  position: fixed;
+  padding:  1vh 2vw;
+  overflow:auto;
   z-index: 100;
 }
 
+.header h1{
+  font-size: 3vh;
+  color: #FFF;
+}
+
 img.header-logo_e22{
-  height:7vh;
+  height:6vh;
 }
 img.header-logo_x{
-  height:7vh;
+  height:6vh;
   margin-left: 1vw;
   margin-right: 1vw;
 }
 img.header-logo_unilu{
-  height:7vh;
+  height:6vh;
   margin-right: 5vw;
-}
-
-
-h1.big{
-  font-size: 5vh;
 }
 
 h1,h2,h3,h4{
   text-decoration: underline;
-}
-
-h1.white{
-  color: #FFF;
+  text-overflow:
 }
 
 a.menuItem{
@@ -71,15 +65,9 @@ div.main{
     border-style: solid;
     border-color: #CBA;
     border-radius: 5vh;
+    height: auto;
+    margin: 3vh 2.5vw 3vh 2.5vw;
     padding: 1vh 2.5vw 2vh 2.5vw;
-}
-
-.wrapper{
-  display: block;
-  overflow-y: auto;
-  position: fixed;
-  bottom: 0px;
-  padding: 3vh 2.5vw 3vh 2.5vw;
 }
 
 p{
