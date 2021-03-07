@@ -10,7 +10,7 @@ window.onload= function (){
 };
 window.onresize = function(){dispatchEvent(new Event("load"))};
 </script>
-<header>
+<div class="header">
   <div class="inner_vertical_align_middle">
     <div class="inner_vertical_align_middle">
       <a href="http://esch2022.lu"><img class="header-logo_e22" src="../img/E22.svg"></img>
@@ -27,7 +27,7 @@ window.onresize = function(){dispatchEvent(new Event("load"))};
   <div class="inner_vertical_align_middle">
     <h1 class="white big" id="headerTitle">SoftwareEngineeringProject</h1>
   </div>
-</header>
+</div>
   <div class="menu" id="menu">
     <a href="/" onclick="alert('MenuItem1')" class="menuItem"> MenuItem1</a>
       <a href="/" onclick="alert('MenuItem2')" class="menuItem"> MenuItem2</a>
