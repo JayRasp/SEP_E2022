@@ -1,12 +1,14 @@
 
+<link rel="stylesheet" href="stylesheet.css">
 <script type="text/javascript" src="Javascript.js"></script>
 <script>
 window.onload= function (){
   var menu = document.getElementById("menu");
   menu.style.top=getHeightByTagName("header")+"px";
-  var main = document.getElementById("main");
-  main.style.marginTop = getHeightByTagName("header")+getHeightById("menu")+"px";
+  var wrapper = document.getElementsByClassName("wrapper")[0];
+  wrapper.style.top = getHeightByTagName("header")+getHeightById("menu")+"px";
 };
+window.onresize = function(){dispatchEvent(new Event("load"))};
 </script>
 <header>
   <div class="inner_vertical_align_middle">
