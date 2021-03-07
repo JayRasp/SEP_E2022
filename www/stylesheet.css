@@ -53,10 +53,11 @@ a.menuItem{
 
 .menu{
   background-color: #d10000;
-  transition: top 1s;
-  position: relative;
+  transition: top 0.2s;
+  position: fixed;
   width: 100%;
   display: flex;
+  overflow-x: auto;
 }
 
 .inner_vertical_align_middle{
@@ -69,8 +70,15 @@ div.main{
     border-style: solid;
     border-color: #CBA;
     border-radius: 5vh;
-    margin: 0px 2.5vw 3vh 2.5vw;
     padding: 1vh 2.5vw 2vh 2.5vw;
+}
+
+.wrapper{
+  display: block;
+  overflow-y: auto;
+  position: fixed;
+  bottom: 0px;
+  padding: 3vh 2.5vw 3vh 2.5vw;
 }
 
 p{
@@ -80,6 +88,7 @@ p{
 body{
   margin: 0px 0px 0px 0px;
   background-color: #EDC;
+  overflow: hidden;
 }
 
 table{
