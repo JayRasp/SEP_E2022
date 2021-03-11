@@ -2,7 +2,9 @@
 GitHub for our Software Engineering Project files.
 
 ## Pull/Push:
-Use `git pull https://github.com/JayRasp/SEP_E2022.git` to clone the repository localy
+First make sure that you use the following command in the directory that you want to clone the repository to.
+
+Then use `git clone https://github.com/JayRasp/SEP_E2022.git` to clone the repository localy.
 
 Use `git push origin dev` :warning: __Please only push to the dev branch!__ :warning:
 
