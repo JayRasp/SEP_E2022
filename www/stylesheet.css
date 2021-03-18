@@ -1,6 +1,6 @@
 .header{
   background-color: #d30002;
-  padding:  1vh 2vw;
+  padding:  2vh 0 1vh 2vw;
   overflow:auto;
   z-index: 100;
 }
@@ -77,6 +77,11 @@ div.main{
 
 p{
   padding-left: 1vw;
+}
+
+li{
+  margin: 2vh 0vh;
+  font-size: 2vh;
 }
 
 body{
