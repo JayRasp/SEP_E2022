@@ -39,6 +39,6 @@ $(function(){
       <a href="/" onclick="alert('MenuItem2')" class="menuItem"> MenuItem2</a>
         <a href="/" onclick="alert('MenuItem3')" class="menuItem"> MenuItem3</a>
           <a href="/" onclick="alert('MenuItem4')" class="menuItem"> MenuItem4</a>
-            <a href="testQuiz.php" class="menuItem"> testQuiz</a>
+            <a href="quizinfo.php" class="menuItem"> Quiz Info</a>
   </div>
   <div class="menuspace"></div>
