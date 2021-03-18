@@ -1,6 +1,6 @@
 .header{
   background-color: #d30002;
-  padding:  1vh 2vw;
+  padding:  2vh 0 1vh 2vw;
   overflow:auto;
   z-index: 100;
 }
@@ -25,11 +25,12 @@ img.header-logo_unilu{
 
 h1,h2,h3,h4{
   text-decoration: underline;
-  text-overflow:
+
 }
 
-a.menuItem{
+.menuItem{
     transition: background-color 0.2s ease;
+      background-color: #d10000;
     font-size: 2vh;
     font-weight: bold;
     color: #FFF;
@@ -43,7 +44,7 @@ a.menuItem{
 
 .menuItem:hover{
   transition: background-color 0.5s ease;
-  background-color: #a00;
+  background-color: #b11;
 }
 
 .menu{
@@ -77,6 +78,38 @@ div.main{
 
 p{
   padding-left: 1vw;
+}
+
+li{
+  margin: 2vh 0vh;
+  font-size: 2vh;
+}
+
+form.alignRight{
+  display: flex;
+  justify-content: center;
+}
+
+.quizAnswers{
+  
+}
+
+.quizAnswers > input{
+  font-size: 3vh;
+}
+
+input.menuItem{
+  transition: background-color .5s ease-in-out;
+  font-size: 2vh;
+  font-weight: bold;
+  border-radius: 4vh;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+input.menuItem:hover{
+  transition: background-color .5s ease-in-out;
+  background-color: #A00;
 }
 
 body{
