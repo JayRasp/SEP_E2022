@@ -90,6 +90,14 @@ form.alignRight{
   justify-content: center;
 }
 
+.quizAnswers{
+  
+}
+
+.quizAnswers > input{
+  font-size: 3vh;
+}
+
 input.menuItem{
   transition: background-color .5s ease-in-out;
   font-size: 2vh;
