@@ -20,8 +20,8 @@ function console_log($output, $with_script_tags = true) {
     <?php include "./header.php" ?>
     <?php
       $host = 'mysql';
-        $user = 'root';
-        $pass = 'secret';
+        $user = 'quiz';
+        $pass = 'SEP2022Quiz';
         $dbname = 'quiz';
         $error = false;
         $conn = new mysqli($host, $user, $pass, $dbname);
