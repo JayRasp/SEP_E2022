@@ -20,13 +20,13 @@ services:
     links:
         - mysql
     volumes:
-        - ./www:/var/www/html 
+        - ./www:/var/www/html
     networks:
         uln:
          ipv4_address: 10.6.0.3
 
   app:
-    image: php:7.4-fpm
+    image: php:latest
     volumes:
         - ./www:/var/www/html
     command: "true"
@@ -39,8 +39,8 @@ services:
         - ./mysql:/var/lib/mysql
     environment:
         MYSQL_ROOT_PASSWORD: secret
-        MYSQL_DATABASE: webprog 
-        MYSQL_USER: webprog 
+        MYSQL_DATABASE: webprog
+        MYSQL_USER: webprog
         MYSQL_PASSWORD: webprog
     networks:
         uln:
