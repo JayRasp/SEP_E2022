@@ -52,17 +52,26 @@ function console_log($output, $with_script_tags = true) {
         </script>
 
             <script>
+    function resetButtonColors(){
+      //resets the color of any previous selection
+      document.getElementsByClassName("answer1Button")[0].style.backgroundColor=null;
+      document.getElementsByClassName("answer2Button")[0].style.backgroundColor=null;
+      document.getElementsByClassName("answer3Button")[0].style.backgroundColor=null;
+      document.getElementsByClassName("answer4Button")[0].style.backgroundColor=null;
+    }
+
     function checkAnswer(element, answer){
       var hashedAnswer = sha256(answer);
       //alert(hashedAnswer+"=?"+"<?php echo $correctAnswerHash?>");
       var result;
       var elements= document.getElementsByClassName("answer");
       //revert color change from previous answer
+      resetButtonColors();
       if(hashedAnswer=="<?php echo $correctAnswerHash?>"){
-        element.style.backgroundColor ="green";
+        element.style.backgroundColor ="#6F6";
         result = "Correct";
       }else{
-        element.style.backgroundColor ="red";
+        element.style.backgroundColor ="#F88";
         result= "Wrong";
       }
       document.getElementById("answerMessage").innerHTML= "<h2>"+result+"</h2>";
