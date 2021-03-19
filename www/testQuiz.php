@@ -14,7 +14,7 @@ function console_log($output, $with_script_tags = true) {
   $pass = 'SEP2022Quiz';
   $dbname = 'quiz';
   $error = false;
-  $conn = @new mysqli($host, $user, $pass, $dbname);
+  $conn = @new mysqli($host, $user, $pass, $dbname); // '@' supresses warnings so that they don't appear in plain html
 
   if ($conn->connect_error) {
     header("HTTP/1.0 404 Not Found");
@@ -77,16 +77,14 @@ function console_log($output, $with_script_tags = true) {
 
 
       <div class="main">
-        <h1><?php echo $row["question"]; ?></h1>
+        <h1 class="question"><?php echo $row["question"]; ?></h1>
           <?php
 if(!$error){
   if ($result->num_rows > 0) {
   // output data of each row
-  echo "<form class='quizAnswers' id='quizForm'>";
   for($i=0;$i<4;$i++) {
-    echo "<input class='answer" . ($i+1) . "' type='submit' onclick='checkAnswer(this,\"$answersShuffled[$i]\");' value='" . $answersShuffled[$i] . " '/>";
+    echo "<input class='answer" . ($i+1) . "' type='submit' onclick='checkAnswer(this,\"$answersShuffled[$i]\");' value='" . $answersShuffled[$i] . "'/>";
   }
-  echo "</form>";
 }}?>
 <div id="answerMessage">
 </div>
@@ -108,14 +106,6 @@ if(!$error){
     el.dispatchEvent(evObj);
   }
 }
-
-
-  function submitListener(event){
-    event.preventDefault();
-    eventFire(event.target, 'click');
-    }
-      const form = document.getElementById("quizForm");
-      form.addEventListener('submit', submitListener);
   </script>
 
   </html>
