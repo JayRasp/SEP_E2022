@@ -101,6 +101,9 @@ if(!$error){
   }
   echo "</div>";
 }}?>
+<div class="hint">
+  <a href="<?php echo $row["hint"]?>">?</a>
+</div>
 <div id="answerMessage">
 </div>
 
