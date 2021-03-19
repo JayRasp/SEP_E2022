@@ -58,7 +58,7 @@ if(!$error){
 </br>
 </br>
   <form class="alignRight" action="/testQuiz.php">
-    <input class="menuItem" type="submit" value="Test">
+    <input class="button" type="submit" value="Test">
   </form>
 </div>
         <footer>
