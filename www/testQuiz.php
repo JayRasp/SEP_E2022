@@ -82,9 +82,15 @@ function console_log($output, $with_script_tags = true) {
 if(!$error){
   if ($result->num_rows > 0) {
   // output data of each row
+  echo "<div class='answerRow'>";
   for($i=0;$i<4;$i++) {
-    echo "<input class='answer" . ($i+1) . "' type='submit' onclick='checkAnswer(this,\"$answersShuffled[$i]\");' value='" . $answersShuffled[$i] . "'/>";
+    echo "<div class='answer" . ($i+1) . "Div'><input class='answer" . ($i+1) . "Button' type='submit' onclick='checkAnswer(this,\"$answersShuffled[$i]\");' value='" . $answersShuffled[$i] . "'/></div>";
+    if($i==1){
+      echo "</div>\n
+      <div class='answerRow'>";
+    }
   }
+  echo "</div>";
 }}?>
 <div id="answerMessage">
 </div>
