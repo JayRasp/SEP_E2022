@@ -1,58 +1,66 @@
+:root {
+  --bodyBackgroundColor: #EDC;
+  --mainBackgroundColor: #FED;
+  --mainBorderColor: #CBA;
+  --mainTextColor: #000;
+  --headerColor: #c20;
+  --menuBackgroundColor: var(--headerColor);
+  --menuTextColor: #FFF;
+  --buttonBackgroundColor: var(--menuBackgroundColor);
+  --buttonTextColor: var(--menuTextColor);
+  --answerButtonBackgroundColor: #FFF;
+  --answerButtonTextColor: #000;
+}
+
 .header{
-  background-color: #d30002;
+  background-color: var(--headerColor);
   padding:  2vh 0 1vh 2vw;
   overflow:auto;
   z-index: 100;
 }
 
-.header h1{
-  font-size: 3vh;
-  color: #FFF;
-}
 
-img.header-logo_e22{
+img.header-logo_e22, img.header-logo_x, img.header-logo_unilu{
   height:6vh;
 }
 img.header-logo_x{
-  height:6vh;
   margin-left: 1vw;
   margin-right: 1vw;
-}
-img.header-logo_unilu{
-  height:6vh;
-  margin-right: 5vw;
 }
 
 h1,h2,h3,h4{
   text-decoration: underline;
-
 }
-
-.menuItem{
-    transition: background-color 0.2s ease;
-      background-color: #d10000;
-    font-size: 2vh;
-    font-weight: bold;
-    color: #FFF;
-    padding: 2vh 2vw 2vh 2vw;
-    text-decoration: none;
-    margin: auto;
-    border-radius: 2vh;
-    border-color: #FFFFFFFF;
-    border-style: none;
-}
-
-.menuItem:hover{
-  transition: background-color 0.5s ease;
-  background-color: #b11;
-}
-
 .menu{
-  background-color: #d10000;
+  background-color: var(--menuBackgroundColor);
   transition: top 0.2s;
   width: 100%;
   display: flex;
   overflow-x: auto;
+}
+
+.menuItem, .button{
+    transition: filter 0.2s ease;
+    background-color: var(--menuBackgroundColor);
+    font-size: 2vmin;
+    font-weight: bold;
+    color: var(--menuTextColor);
+    padding: 2vh 2vw 2vh 2vw;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 2vh;
+    min-width: fit-content;
+}
+
+.menuItem:hover{
+  transition: filter 0.5s ease;
+  filter: saturate(90%);
+}
+
+.button{
+  background-color: var(--buttonBackgroundColor);
+  color: var(--buttonTextColor);
+  outline: none;
 }
 
 .menuspace{
@@ -66,9 +74,10 @@ h1,h2,h3,h4{
 }
 
 div.main{
-    background-color: #FED;
+    background-color: var(--mainBackgroundColor);
+    color: var(--mainTextColor);
     border-style: solid;
-    border-color: #CBA;
+    border-color: var(--mainBorderColor);
     border-radius: 5vh;
     border-width: 0.3vw;
     height: auto;
@@ -85,36 +94,25 @@ li{
   font-size: 2vh;
 }
 
-form.alignRight{
+.alignCenter{
   display: flex;
   justify-content: center;
 }
 
-.quizAnswers{
-  
-}
-
-.quizAnswers > input{
-  font-size: 3vh;
-}
-
-input.menuItem{
-  transition: background-color .5s ease-in-out;
-  font-size: 2vh;
-  font-weight: bold;
+input.button{
   border-radius: 4vh;
   font-family: "Times New Roman", Times, serif;
   cursor: pointer;
 }
 
-input.menuItem:hover{
-  transition: background-color .5s ease-in-out;
-  background-color: #A00;
+input.button:hover{
+  transition: filter .5s ease-in-out;
+  filter: saturate(90%);
 }
 
 body{
   margin: 0px 0px 0px 0px;
-  background-color: #EDC;
+  background-color: var(--bodyBackgroundColor);
 }
 
 table{
@@ -126,4 +124,93 @@ td, th{
   padding: .5vh .5vw .5vh .5vw;
   border-style: solid;
   border-width: thin;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.question{
+  animation: fadeIn 2.5s;
+  margin-bottom: 5vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+.answerRow{
+  display: flex;
+  margin: 2vh 0;
+  justify-content: space-around;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    95% {
+        transform: scale(1.05);
+    }
+    97% {
+        transform: scale(1.025);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.answer1Div, .answer2Div, .answer3Div, .answer4Div{
+  transform: scale(0);
+  width: 30%;
+}
+
+.answer1Div{
+    animation: 1s 2s zoom forwards ;
+}
+.answer2Div{
+    animation: 1s 2.5s zoom forwards ;
+}
+.answer3Div{
+    animation: 1s 3s zoom forwards ;
+}
+.answer4Div{
+    animation: 1s 3.5s zoom forwards ;
+}
+
+@keyframes answerHover{
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+a::selection{
+  background-color: #0000;
+}
+
+.answer1Button, .answer2Button, .answer3Button, .answer4Button{
+  background-color: var(--answerButtonBackgroundColor);
+  color: var(--answerButtonTextColor);
+  box-shadow: inset 0 0 2vh 0 #0006;
+  white-space: normal;
+  font-size: 3vmin;
+  animation: answerHover 0.5s backwards;
+  display: block;
+  line-height: 10vh;
+  text-align: center;
+  border-radius: 3vmin;
+}
+
+.answer1Button:hover, .answer2Button:hover, .answer3Button:hover, .answer4Button:hover{
+  transition: transform .5s ease-out;
+  transform: scale(1.1);
+  cursor: pointer;
 }
