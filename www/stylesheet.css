@@ -135,6 +135,19 @@ td, th{
     }
 }
 
+.question{
+  animation: fadeIn 2.5s;
+  margin-bottom: 2vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+.answerRow{
+  display: flex;
+  margin: 1vh 0;
+  justify-content: space-around;
+}
+
 @keyframes zoom {
     0% {
         transform: scale(0);
@@ -153,33 +166,22 @@ td, th{
     }
 }
 
-.question{
-  animation: fadeIn 2.5s;
-  margin-bottom: 2vh;
-  text-align: center;
-  text-decoration: none;
-}
-
-.answerRow{
-  height: 10vh;
-  display: flex;
-  margin: 1vh 0;
-  justify-content: space-around;
-}
-
-.answer1Button, .answer2Button, .answer3Button, .answer4Button{
-  background-color: var(--answerButtonBackgroundColor);
-  color: var(--answerButtonTextColor);
-  white-space: normal;
-  height:80%;
-  font-size: 3vmin;
-  width: 100%;
-  animation: answerHover 0.5s backwards;
-}
-
 .answer1Div, .answer2Div, .answer3Div, .answer4Div{
   transform: scale(0);
   width: 30%;
+}
+
+.answer1Div{
+    animation: 1s 2s zoom forwards ;
+}
+.answer2Div{
+    animation: 1s 2.5s zoom forwards ;
+}
+.answer3Div{
+    animation: 1s 3s zoom forwards ;
+}
+.answer4Div{
+    animation: 1s 3.5s zoom forwards ;
 }
 
 @keyframes answerHover{
@@ -194,19 +196,19 @@ td, th{
     }
 }
 
+.answer1Button, .answer2Button, .answer3Button, .answer4Button{
+  background-color: var(--answerButtonBackgroundColor);
+  color: var(--answerButtonTextColor);
+  white-space: normal;
+  font-size: 3vmin;
+  animation: answerHover 0.5s backwards;
+  display: block;
+  line-height: 10vh;
+  text-align: center;
+  border-radius: 3vmin;
+}
+
 .answer1Button:hover, .answer2Button:hover, .answer3Button:hover, .answer4Button:hover{
   animation: answerHover 0.5s forwards;
   cursor: pointer;
-}
-.answer1Div{
-    animation: 1s 2s zoom forwards ;
-}
-.answer2Div{
-    animation: 1s 2.5s zoom forwards ;
-}
-.answer3Div{
-    animation: 1s 3s zoom forwards ;
-}
-.answer4Div{
-    animation: 1s 3.5s zoom forwards ;
 }

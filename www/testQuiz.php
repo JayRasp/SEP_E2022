@@ -84,7 +84,7 @@ if(!$error){
   // output data of each row
   echo "<div class='answerRow'>";
   for($i=0;$i<4;$i++) {
-    echo "<div class='answer" . ($i+1) . "Div'><input class='answer" . ($i+1) . "Button' type='submit' onclick='checkAnswer(this,\"$answersShuffled[$i]\");' value='" . $answersShuffled[$i] . "'/></div>";
+    echo "<div class='answer" . ($i+1) . "Div'><a class='answer" . ($i+1) . "Button' onclick='checkAnswer(this,\"$answersShuffled[$i]\");'>" . $answersShuffled[$i] . "</a></div>";
     if($i==1){
       echo "</div>\n
       <div class='answerRow'>";
