@@ -94,7 +94,7 @@ li{
   font-size: 2vh;
 }
 
-form.alignCenter{
+.alignCenter{
   display: flex;
   justify-content: center;
 }
