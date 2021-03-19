@@ -28,7 +28,7 @@ h1,h2,h3,h4{
 
 }
 
-.menuItem{
+.menuItem, .button{
     transition: background-color 0.2s ease;
       background-color: #d10000;
     font-size: 2vh;
@@ -40,6 +40,10 @@ h1,h2,h3,h4{
     border-radius: 2vh;
     border-color: #FFFFFFFF;
     border-style: none;
+}
+
+a.menuItem{
+  min-width: fit-content;
 }
 
 .menuItem:hover{
@@ -91,23 +95,20 @@ form.alignRight{
 }
 
 .quizAnswers{
-  
+
 }
 
 .quizAnswers > input{
   font-size: 3vh;
 }
 
-input.menuItem{
-  transition: background-color .5s ease-in-out;
-  font-size: 2vh;
-  font-weight: bold;
+input.button{
   border-radius: 4vh;
   font-family: "Times New Roman", Times, serif;
   cursor: pointer;
 }
 
-input.menuItem:hover{
+input.button:hover{
   transition: background-color .5s ease-in-out;
   background-color: #A00;
 }
@@ -126,4 +127,56 @@ td, th{
   padding: .5vh .5vw .5vh .5vw;
   border-style: solid;
   border-width: thin;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    95% {
+        transform: scale(1.05);
+    }
+    97% {
+        transform: scale(1.025);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.question{
+  animation: fadeIn 2.5s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.answer1, .answer2, .answer3, .answer4{
+  transform: scale(0);
+}
+.answer1{
+    animation: 1s 2s zoom forwards ;
+}
+.answer2{
+    animation: 1s 2.5s zoom forwards ;
+}
+.answer2::after{
+    content: "<br/>";
+}
+.answer3{
+    animation: 1s 3s zoom forwards ;
+}
+.answer4{
+    animation: 1s 3.5s zoom forwards ;
 }
