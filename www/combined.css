@@ -27,7 +27,7 @@
   font-size: 1.5rem;
 }
 .content .container .choices {
-  display: flex;
+  display: inline;
   flex-wrap: wrap;
   margin: 3rem auto 3rem;
   width: 500px;
@@ -98,6 +98,7 @@ img.header-logo_x{
 .menu{
   background-color: var(--menuBackgroundColor);
   transition: top 0.2s;
+  z-index: 100;
   width: 100%;
   display: flex;
   overflow-x: auto;

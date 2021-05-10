@@ -30,7 +30,7 @@
         <button id="guess1" class="btn answer2Div">
           <p id="choice1"></p>
         </button>
-
+      </br>
         <button id="guess2" class="btn answer3Div">
           <p id="choice2"></p>
         </button>
