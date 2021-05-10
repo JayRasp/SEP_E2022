@@ -32,6 +32,7 @@ class Question {
         this.score++;
       }
       this.currentQuestionIndex++;
+      document.getElementById("quiz").innerHTML = document.getElementById("quiz").innerHTML;
     }
     hasEnded() {
       return this.currentQuestionIndex >= this.questions.length;
