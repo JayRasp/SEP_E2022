@@ -13,28 +13,27 @@
     padding: 1vh;
     text-align: center;
 }
-body h1 {
+.content h1 {
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-size: 3rem;
 }
-body h1 span, body h1 i {
+.content h1 span, body h1 i {
   color: #ffa502;
 }
-body h3 {
+.content h3 {
   color: #ffa502;
   font-size: 1.5rem;
 }
-body .container .choices {
+.content .container .choices {
   display: flex;
   flex-wrap: wrap;
   margin: 3rem auto 3rem;
   width: 500px;
 }
-body .container .choices button {
+.content .container .choices button {
   flex: 1 0 45%;
   width: 200px;
-  height: 80px;
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -44,18 +43,18 @@ body .container .choices button {
   user-select: none;
   font-weight: 600;
 }
-body .container .choices button:hover {
+.content .container .choices button:hover {
   background: #ffa502;
   transition: 0.5s;
 }
-body .container .choices button:active {
+.content .container .choices button:active {
   transform: scale(0.9);
   transition: transform 0.1s;
 }
-body .container .choices button p {
+.content .container .choices button p {
   font-size: 1.3rem;
 }
-body #progress {
+.content #progress {
   font-size: 1.3rem;
   color: #ffa502;
 }
@@ -198,11 +197,43 @@ td, th{
 
 .question{
   animation: fadeIn 2.5s;
-  margin-bottom: 5vh;
-  text-align: center;
-  text-decoration: none;
 }
 
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1.1);
+    }
+    95% {
+        transform: scale(1.05);
+    }
+    97% {
+        transform: scale(1.025);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.answer1Div, .answer2Div, .answer3Div, .answer4Div{
+  transform: scale(0);
+  width: 30%;
+}
+
+.answer1Div{
+    animation: 1s 2s zoom forwards ;
+}
+.answer2Div{
+    animation: 1s 2.5s zoom forwards ;
+}
+.answer3Div{
+    animation: 1s 3s zoom forwards ;
+}
+.answer4Div{
+    animation: 1s 3.5s zoom forwards ;
+}
 
 .hint a{
   text-decoration: none;
