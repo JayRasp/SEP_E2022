@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+
+
+.content {
+    border-radius: 2vh;
+    /* min-height: 100vh; */
+    background: #583b29;
+    color: #dfe4ea;
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+    margin: auto;
+    width: 80vw;
+    padding: 1vh;
+    text-align: center;
+}
+body h1 {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+body h1 span, body h1 i {
+  color: #ffa502;
+}
+body h3 {
+  color: #ffa502;
+  font-size: 1.5rem;
+}
+body .container .choices {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem auto 3rem;
+  width: 500px;
+}
+body .container .choices button {
+  flex: 1 0 45%;
+  width: 200px;
+  height: 80px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin: 0.4rem;
+  outline: none;
+  background: #dfe4ea;
+  user-select: none;
+  font-weight: 600;
+}
+body .container .choices button:hover {
+  background: #ffa502;
+  transition: 0.5s;
+}
+body .container .choices button:active {
+  transform: scale(0.9);
+  transition: transform 0.1s;
+}
+body .container .choices button p {
+  font-size: 1.3rem;
+}
+body #progress {
+  font-size: 1.3rem;
+  color: #ffa502;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+:root {
+  --bodyBackgroundColor: #EDC;
+  --mainBackgroundColor: #FED;
+  --mainBorderColor: #CBA;
+  --mainTextColor: #000;
+  --headerColor: #c20;
+  --menuBackgroundColor: var(--headerColor);
+  --menuTextColor: #FFF;
+  --buttonBackgroundColor: var(--menuBackgroundColor);
+  --buttonTextColor: var(--menuTextColor);
+  --answerButtonBackgroundColor: #FFF;
+  --answerButtonTextColor: #000;
+}
+
+.header{
+  background-color: var(--headerColor);
+  padding:  2vh 0 1vh 2vw;
+  overflow:auto;
+  z-index: 100;
+}
+
+
+img.header-logo_e22, img.header-logo_x, img.header-logo_unilu{
+  height:6vh;
+}
+img.header-logo_x{
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.main h1,.main h2,.main h3,.main h4{
+  text-decoration: underline;
+}
+.menu{
+  background-color: var(--menuBackgroundColor);
+  transition: top 0.2s;
+  width: 100%;
+  display: flex;
+  overflow-x: auto;
+}
+
+.menuItem, .button{
+    transition: filter 0.2s ease;
+    background-color: var(--menuBackgroundColor);
+    font-size: 2vmin;
+    font-weight: bold;
+    color: var(--menuTextColor);
+    padding: 2vh 2vw 2vh 2vw;
+    text-decoration: none;
+    margin: auto;
+    border-radius: 2vh;
+    min-width: fit-content;
+}
+
+.menuItem:hover{
+  transition: filter 0.5s ease;
+  filter: saturate(90%);
+}
+
+.button{
+  background-color: var(--buttonBackgroundColor);
+  color: var(--buttonTextColor);
+  outline: none;
+}
+
+.menuspace{
+  height: 6.4vh;
+  display: none;
+}
+
+.inner_vertical_align_middle{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div.main{
+    background-color: var(--mainBackgroundColor);
+    color: var(--mainTextColor);
+    border-style: solid;
+    border-color: var(--mainBorderColor);
+    border-radius: 5vh;
+    border-width: 0.3vw;
+    height: auto;
+    margin: 3vh 2.5vw;
+    padding: 2vh 5vw;
+}
+
+
+li{
+  margin: 2vh 0vh;
+  font-size: 2vh;
+}
+
+.alignCenter{
+  display: flex;
+  justify-content: center;
+}
+
+input.button{
+  border-radius: 4vh;
+  font-family: "Times New Roman", Times, serif;
+  cursor: pointer;
+}
+
+input.button:hover{
+  transition: filter .5s ease-in-out;
+  filter: saturate(90%);
+}
+
+body{
+  margin: 0px 0px 0px 0px;
+  background-color: var(--bodyBackgroundColor);
+}
+
+table{
+  border-spacing: 0px;
+}
+
+
+td, th{
+  padding: .5vh .5vw .5vh .5vw;
+  border-style: solid;
+  border-width: thin;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.question{
+  animation: fadeIn 2.5s;
+  margin-bottom: 5vh;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.hint a{
+  text-decoration: none;
+  font-size: 3vh;
+}

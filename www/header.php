@@ -2,7 +2,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 $(function(){
-        // Check the initial Poistion of the Sticky Header
+        // Check the initial Postion of the Sticky Header
         var stickyHeaderTop = $('.menu').offset().top;
         $(window).resize(function(){stickyHeaderTop = $('.menu').offset().top;});
 
