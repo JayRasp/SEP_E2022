@@ -18,24 +18,24 @@
     <div id="quiz">
       <h1><span>Q</span>uiz <i class="far fa-question-circle"></i></h1>
 
-      <h2 id="question"></h2>
+      <h2 id="question" class="question"></h2>
 
       <h3 id="score"></h3>
 
       <div class="choices">
-        <button id="guess0" class="btn">
+        <button id="guess0" class="btn answer1Div">
           <p id="choice0"></p>
         </button>
 
-        <button id="guess1" class="btn">
+        <button id="guess1" class="btn answer2Div">
           <p id="choice1"></p>
         </button>
 
-        <button id="guess2" class="btn">
+        <button id="guess2" class="btn answer3Div">
           <p id="choice2"></p>
         </button>
 
-        <button id="guess3" class="btn">
+        <button id="guess3" class="btn answer4Div">
           <p id="choice3"></p>
         </button>
       </div>
