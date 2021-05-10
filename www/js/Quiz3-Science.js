@@ -8,6 +8,7 @@ class Question {
       return this.answer === choice;
     }
   }
+  //utf8_encode('string') needed to display 'à' , 'é', etc...
   let questions = [
     new Question("Which house in Belval hosts the main research activities in the scientific, technological and medical disciplines ?", ["Maison du Nombre", "Maison du Savoir", "Maison des Arts et des Étudiants", "Maison de l’Innovation"], "Maison du Savoir"),
     new Question("Which research center in Belval focuses its research on environmental, digital and material science fields ?", ["Luxembourg Institute of Science and Technology (LIST)","Luxembourg Institute of Socio-Economic Research (LISER)", "Luxembourg Institute for quality assurance (ILNAS)", "Luxembourg Centre for Systems Biomedicine (LCBS)"], "Luxembourg Institute of Science and Technology (LIST)"),

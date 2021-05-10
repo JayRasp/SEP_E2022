@@ -8,6 +8,7 @@ class Question {
       return this.answer === choice;
     }
   }
+  //utf8_encode('string') needed to display 'à' , 'é', etc...
   let questions = [
     new Question("What are the opening hours of the LLC(Luxembourg Learning Center ?", ["8a.m-22p.m", "7a.m-8p.m", "9a.m-9p.m", "6a.m-8p.m"], "8a.m-22p.m"),
     new Question("When was the University of Luxembourg created ?", ["2003","1995", "1980", "2007"], "2003"),

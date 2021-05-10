@@ -8,6 +8,7 @@ class Question {
       return this.answer === choice;
     }
   }
+  //utf8_encode('string') needed to display 'à' , 'é', etc...
   let questions = [
     new Question("When did the creation of the Belval campus begin ?", ["1992", "2002", "2003", "2010"], "2003"),
     new Question("The University of Luxembourg has 6714 students coming from: ", ["70 countries","115 countries", "129 countries", "218 countries"], "129 countries"),

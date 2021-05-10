@@ -43,15 +43,24 @@ function console_log($output, $with_script_tags = true) {
   <h1>Quiz questions available: <?php echo $result->fetch_assoc()["COUNT(*)"]; ?></h1>
 <?php
 if(!$error){
-    $sql = "SELECT question FROM questions";
+    $sql = "SELECT * FROM questions";
     $result = $conn->query($sql);
   if ($result->num_rows > 0) {
   // output data of each row
-  echo "<ol>";
+  echo "<table>";
+  echo "<th>ID</th><th>Question</th><th>correctAnswer</th><th>wrongAnswer1</th><th>wrongAnswer2</th><th>wrongAnswer3</th><th>Category</th>";
   while($row = $result->fetch_assoc()) {
-    echo "<li>" . $row["question"]. "</li>";
+    echo "<tr>";
+    echo "<td>" . $row["id"]. "</td>";
+      echo "<td>" . utf8_encode($row["question"]). "</td>";
+        echo "<td>" . utf8_encode($row["correctAnswer"]). "</td>";
+          echo "<td>" . utf8_encode($row["wrongAnswer1"]). "</td>";
+            echo "<td>" . utf8_encode($row["wrongAnswer2"]). "</td>";
+              echo "<td>" . utf8_encode($row["wrongAnswer3"]). "</td>";
+                echo "<td>" . utf8_encode($row["category"]). "</td>";
+                  echo "</tr>";
   }
-  echo "</ol>";
+  echo "</table>";
 } else {
   echo "0 results";
 }}?>
