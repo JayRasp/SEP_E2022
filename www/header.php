@@ -34,10 +34,10 @@ $(function(){
   </div>
 </div>
   <div class="menu" id="menu">
-    <a href="/" onclick="alert('MenuItem1')" class="menuItem"> MenuItem1</a>
-      <a href="/" onclick="alert('MenuItem2')" class="menuItem"> MenuItem2</a>
-        <a href="/" onclick="alert('MenuItem3')" class="menuItem"> MenuItem3</a>
-          <a href="/" onclick="alert('MenuItem4')" class="menuItem"> MenuItem4</a>
+    <a href="/" class="menuItem"> Home</a>
+      <a href="/quiz1.php" class="menuItem"> Quiz1</a>
+        <a href="/quiz2.php" class="menuItem"> Quiz2</a>
+          <a href="/quiz3.php" class="menuItem"> Quiz3</a>
             <a href="quizinfo.php" class="menuItem"> Quiz Info</a>
   </div>
   <div class="menuspace"></div>
