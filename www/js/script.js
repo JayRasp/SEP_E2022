@@ -14,10 +14,10 @@ class Question {
     new Question("How many students are enrolled at the university ?", ["6714","3540", "10900", "5698"], "6714"),
     new Question("What does FSTM stand for ?", ["Faculty of Science, Technology and Medicine","Faculty of Science, Technology and Mathematics", "Faculty of Social Technologies and Medicine", "Faculty of Social Sciences, Technology and Medicine"], "Faculty of Science, Technology and Medicine")
   ];
-  
-  
+
+
   console.log(questions);
-  
+
   class Quiz {
     constructor(questions) {
       this.score = 0;
@@ -37,7 +37,7 @@ class Question {
       return this.currentQuestionIndex >= this.questions.length;
     }
   }
-  
+
   // Regroup all  functions relative to the App Display
   const display = {
     elementShown: function(id, text) {
@@ -55,7 +55,7 @@ class Question {
     },
     choices: function() {
       let choices = quiz.getCurrentQuestion().choices;
-  
+
       guessHandler = (id, guess) => {
         document.getElementById(id).onclick = function() {
           quiz.guess(guess);
@@ -70,10 +70,10 @@ class Question {
     },
     progress: function() {
       let currentQuestionNumber = quiz.currentQuestionIndex + 1;
-      this.elementShown("progress", "Question " + currentQuestionNumber + " over " + quiz.questions.length);
+      this.elementShown("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
     },
   };
-  
+
   // Game logic
   quizApp = () => {
     if (quiz.hasEnded()) {
@@ -82,10 +82,10 @@ class Question {
       display.question();
       display.choices();
       display.progress();
-    } 
+    }
   }
   // Create Quiz
   let quiz = new Quiz(questions);
   quizApp();
-  
+
   console.log(quiz);

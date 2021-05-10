@@ -15,10 +15,10 @@ class Question {
     new Question("The Belval campus is particularly attractive to research institutes and companies related to research, for example in the areas of: ", ["Economy and finance", "Biomedicine and Computer Science","Geography and Spatial Planning", "Engineering and Physics"], "Biomedicine and Computer Science"),
     new Question("What major project is currently under development in the Faculty of Science, Technology and Medicine ?", ["TRANSCEND", "ANKP", "HANDB", "KIMM-LUX"],"TRANSCEND")
   ];
-  
-  
+
+
   console.log(questions);
-  
+
   class Quiz {
     constructor(questions) {
       this.score = 0;
@@ -38,7 +38,7 @@ class Question {
       return this.currentQuestionIndex >= this.questions.length;
     }
   }
-  
+
   // Regroup all  functions relative to the App Display
   const display = {
     elementShown: function(id, text) {
@@ -56,7 +56,7 @@ class Question {
     },
     choices: function() {
       let choices = quiz.getCurrentQuestion().choices;
-  
+
       guessHandler = (id, guess) => {
         document.getElementById(id).onclick = function() {
           quiz.guess(guess);
@@ -71,10 +71,10 @@ class Question {
     },
     progress: function() {
       let currentQuestionNumber = quiz.currentQuestionIndex + 1;
-      this.elementShown("progress", "Question " + currentQuestionNumber + " over " + quiz.questions.length);
+      this.elementShown("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
     },
   };
-  
+
   // Game logic
   quizApp = () => {
     if (quiz.hasEnded()) {
@@ -83,10 +83,10 @@ class Question {
       display.question();
       display.choices();
       display.progress();
-    } 
+    }
   }
   // Create Quiz
   let quiz = new Quiz(questions);
   quizApp();
-  
+
   console.log(quiz);

@@ -46,7 +46,7 @@
   </div>
 </div>
 
-  <script src="./js/Quiz2-Science.js" type="text/javascript" ></script>
+  <script src="./js/Quiz3-Science.js" type="text/javascript" ></script>
 </body>
 
 

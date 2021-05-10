@@ -15,10 +15,10 @@ class Question {
     new Question("What are the cultural spaces surrounding the Belval campus ?", ["National Museum of History and Art and Dräi Eechelen Museum", "National Center for Literature","National Museum of Natural History", "National Center for Industrial Culture"], "National Museum of History and Art and Dräi Eechelen Museum"),
     new Question("What cultural events took place on the Belval campus in 2020-2021 ?", ["Night of cultures", "Summer in the City: My Urban Piano, outdoor concerts and projections, street theater, exhibitions", "Luxembourg Art Week", "Night of the museums - museum smile"],"Night of cultures")
   ];
-  
-  
+
+
   console.log(questions);
-  
+
   class Quiz {
     constructor(questions) {
       this.score = 0;
@@ -38,7 +38,7 @@ class Question {
       return this.currentQuestionIndex >= this.questions.length;
     }
   }
-  
+
   // Regroup all  functions relative to the App Display
   const display = {
     elementShown: function(id, text) {
@@ -56,7 +56,7 @@ class Question {
     },
     choices: function() {
       let choices = quiz.getCurrentQuestion().choices;
-  
+
       guessHandler = (id, guess) => {
         document.getElementById(id).onclick = function() {
           quiz.guess(guess);
@@ -71,10 +71,10 @@ class Question {
     },
     progress: function() {
       let currentQuestionNumber = quiz.currentQuestionIndex + 1;
-      this.elementShown("progress", "Question " + currentQuestionNumber + " over " + quiz.questions.length);
+      this.elementShown("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
     },
   };
-  
+
   // Game logic
   quizApp = () => {
     if (quiz.hasEnded()) {
@@ -83,10 +83,10 @@ class Question {
       display.question();
       display.choices();
       display.progress();
-    } 
+    }
   }
   // Create Quiz
   let quiz = new Quiz(questions);
   quizApp();
-  
+
   console.log(quiz);
