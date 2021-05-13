@@ -57,7 +57,7 @@ if(!$error){
           echo "<td>" . utf8_encode($row["wrongAnswer1"]). "</td>";
             echo "<td>" . utf8_encode($row["wrongAnswer2"]). "</td>";
               echo "<td>" . utf8_encode($row["wrongAnswer3"]). "</td>";
-                echo "<td>" . utf8_encode($row["category"]). "</td>";
+                echo "<td><a href='/quiz.php?category=".utf8_encode($row["category"])."'>" . utf8_encode($row["category"]). "</a></td>";
                   echo "</tr>";
   }
   echo "</table>";
@@ -67,7 +67,7 @@ if(!$error){
 </br>
 </br>
 <div class="alignCenter">
-  <a class="button" href="testQuiz.php">Test</a>
+  <a class="button" href="quiz.php?category=all">Test</a>
 </div>
 </div>
         <footer>

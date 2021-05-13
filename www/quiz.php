@@ -77,6 +77,10 @@
       $questions= array();
       if(!$error){
           $sql = ('SELECT * FROM questions WHERE category="' . $category . '"');
+
+            if($category=="All"){
+              $sql= 'SELECT * FROM questions';
+            }
           $result = $conn->query($sql);
         if ($result->num_rows > 0){
         while($row = $result->fetch_assoc()) {
