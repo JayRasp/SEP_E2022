@@ -35,9 +35,9 @@ $(function(){
 </div>
   <div class="menu" id="menu">
     <a href="/" class="menuItem"> Home</a>
-      <a href="/quiz1.php" class="menuItem"> Quiz1</a>
-        <a href="/quiz2.php" class="menuItem"> Quiz2</a>
-          <a href="/quiz3.php" class="menuItem"> Quiz3</a>
+      <a href="/quiz.php?category=basic" class="menuItem"> Quiz1</a>
+        <a href="/quiz.php?category=science" class="menuItem"> Quiz2</a>
+          <a href="/quiz.php?category=culture" class="menuItem"> Quiz3</a>
             <a href="quizinfo.php" class="menuItem"> Quiz Info</a>
   </div>
   <div class="menuspace"></div>
