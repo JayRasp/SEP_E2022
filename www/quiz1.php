@@ -46,9 +46,56 @@
   </div>
 </div>
 
-  <script src="./js/script.js" type="text/javascript" ></script>
+
+  <?php
+  function console_log($output, $with_script_tags = true) {
+      $js_code = 'console.log(' . json_encode($output, JSON_HEX_TAG) .
+  ');';
+      if ($with_script_tags) {
+          $js_code = '<script>' . $js_code . '</script>';
+      }
+      echo $js_code;
+  }
+  ?>
+  <?php
+    $host = 'mysql';
+      $user = 'quiz';
+      $pass = 'SEP2022Quiz';
+      $dbname = 'quiz';
+      $error = false;
+      $conn = new mysqli($host, $user, $pass, $dbname);
+
+      if ($conn->connect_error) {
+          console_log("Connection failed: " . $conn->connect_error);
+          $error=true;
+      }else{
+          console_log("Connected to MySQL successfully!");
+      }
+
+      $questions= array();
+      if(!$error){
+          $sql = "SELECT * FROM questions WHERE category='Basic'";
+          $result = $conn->query($sql);
+        if ($result->num_rows > 0){
+        while($row = $result->fetch_assoc()) {
+          $questionArray = array($row['question'],$row['correctAnswer'],$row['wrongAnswer1'],$row['wrongAnswer2'],$row['wrongAnswer3']);
+          array_push($questions,$questionArray);
+        }
+      }
+      }
+  ?>
+
+  <script type="text/javascript">
+    var questions = <?php echo json_encode($questions)?>;
+  </script>
 </body>
 
 
 
+<?php
+
+$conn->close();
+?>
+
+  <script src="./js/script.js" type="text/javascript" ></script>
 </html>

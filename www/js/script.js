@@ -9,15 +9,9 @@ class Question {
     }
   }
   //utf8_encode('string') needed to display 'à' , 'é', etc...
-  let questions = [
-    new Question("What are the opening hours of the LLC(Luxembourg Learning Center ?", ["8a.m-22p.m", "7a.m-8p.m", "9a.m-9p.m", "6a.m-8p.m"], "8a.m-22p.m"),
-    new Question("When was the University of Luxembourg created ?", ["2003","1995", "1980", "2007"], "2003"),
-    new Question("How many students are enrolled at the university ?", ["6714","3540", "10900", "5698"], "6714"),
-    new Question("What does FSTM stand for ?", ["Faculty of Science, Technology and Medicine","Faculty of Science, Technology and Mathematics", "Faculty of Social Technologies and Medicine", "Faculty of Social Sciences, Technology and Medicine"], "Faculty of Science, Technology and Medicine")
-  ];
 
 
-  console.log(questions);
+  //console.log(questions);
 
   class Quiz {
     constructor(questions) {
@@ -86,8 +80,16 @@ class Question {
       display.progress();
     }
   }
+  var questionsProcessed=[];
+  generateQuestions = () => {
+    for(var i=0;i<questions.length;i++)
+    {
+      questionsProcessed.push(new Question(questions[i][0],[questions[i][1],questions[i][2],questions[i][3],questions[i][4]],questions[i][1]));
+    }
+  }
   // Create Quiz
-  let quiz = new Quiz(questions);
+  generateQuestions();
+  let quiz = new Quiz(questionsProcessed);
   quizApp();
 
-  console.log(quiz);
+  //console.log(quiz);
