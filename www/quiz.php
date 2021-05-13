@@ -71,16 +71,20 @@
       }else{
           console_log("Connected to MySQL successfully!");
       }
+      $category = ucfirst(htmlspecialchars($_GET['category']));
+      console_log("Category=" . $category);
 
       $questions= array();
       if(!$error){
-          $sql = "SELECT * FROM questions WHERE category='Basic'";
+          $sql = ('SELECT * FROM questions WHERE category="' . $category . '"');
           $result = $conn->query($sql);
         if ($result->num_rows > 0){
         while($row = $result->fetch_assoc()) {
-          $questionArray = array($row['question'],$row['correctAnswer'],$row['wrongAnswer1'],$row['wrongAnswer2'],$row['wrongAnswer3']);
+          //console_log($row);
+          $questionArray = array(utf8_encode($row['question']),utf8_encode($row['correctAnswer']),utf8_encode($row['wrongAnswer1']),utf8_encode($row['wrongAnswer2']),utf8_encode($row['wrongAnswer3']));
           array_push($questions,$questionArray);
         }
+        //console_log($questions);
       }
       }
   ?>

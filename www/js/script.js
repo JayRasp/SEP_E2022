@@ -46,6 +46,15 @@ class Question {
         <h3> Your score : ${quiz.score} / ${quiz.questions.length}</h3>`;
       this.elementShown("quiz", endQuizHTML);
     },
+    notExistingQuiz: function() {
+      endQuizHTML = "<h1>Quiz does not exist !</h1>";
+      if((new URLSearchParams(window.location.search)).get('category')!=null){
+        endQuizHTML+='<h3> There is no quiz for category "'+ (new URLSearchParams(window.location.search)).get('category')+'"</h3>';
+      }else{
+        endQuizHTML+='<h3> No category provided</h3>';
+      }
+      this.elementShown("quiz", endQuizHTML);
+    },
     question: function() {
       this.elementShown("question", quiz.getCurrentQuestion().text);
     },
@@ -66,14 +75,21 @@ class Question {
     },
     progress: function() {
       let currentQuestionNumber = quiz.currentQuestionIndex + 1;
-      this.elementShown("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length);
+      var category= (new URLSearchParams(window.location.search)).get('category');
+      var categoryFormatted= category.charAt(0).toUpperCase() + category.slice(1);
+      this.elementShown("progress", "Question " + currentQuestionNumber + " of " + quiz.questions.length + "</br></br>Category: "+categoryFormatted);
     },
   };
 
   // Game logic
   quizApp = () => {
     if (quiz.hasEnded()) {
+      if(questionsProcessed.length==0){
+        console.log("Non existing quiz");
+        display.notExistingQuiz();
+      }else{
       display.endQuiz();
+    }
     } else {
       display.question();
       display.choices();
