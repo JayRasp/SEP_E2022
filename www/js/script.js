@@ -1,8 +1,8 @@
 class Question {
-    constructor(text, choices, answer) {
+    constructor(text, choices) {
       this.text = text;
       this.choices = choices;
-      this.answer = answer;
+      this.answer = choices[0];
     }
     isCorrectAnswer(choice) {
       return this.answer === choice;
@@ -120,7 +120,7 @@ shuffle(choices);
   generateQuestions = () => {
     for(var i=0;i<questions.length;i++)
     {
-      questionsProcessed.push(new Question(questions[i][0],[questions[i][1],questions[i][2],questions[i][3],questions[i][4]],questions[i][1]));
+      questionsProcessed.push(new Question(questions[i][0],[questions[i][1],questions[i][2],questions[i][3],questions[i][4]]));
     }
   }
   // Create Quiz
