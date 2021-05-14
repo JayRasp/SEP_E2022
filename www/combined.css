@@ -87,7 +87,7 @@
 
 
 img.header-logo_e22, img.header-logo_x, img.header-logo_unilu{
-  height:6vh;
+  height:4vh;
 }
 img.header-logo_x{
   margin-left: 1vw;
@@ -109,7 +109,7 @@ img.header-logo_x{
 .menuItem, .button{
     transition: filter 0.2s ease;
     background-color: var(--menuBackgroundColor);
-    font-size: 2vmin;
+    font-size: 2vh;
     font-weight: bold;
     color: var(--menuTextColor);
     padding: 2vh 2vw 2vh 2vw;
@@ -131,7 +131,6 @@ img.header-logo_x{
 }
 
 .menuspace{
-  height: 6.4vh;
   display: none;
 }
 
