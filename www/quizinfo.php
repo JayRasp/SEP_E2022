@@ -13,7 +13,7 @@ function console_log($output, $with_script_tags = true) {
 
   <head>
     <!--<meta http-equiv="refresh" content="5;URL='/'">!-->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="combined.css">
   </head>
 
   <body>
