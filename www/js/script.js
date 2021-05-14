@@ -125,6 +125,7 @@ shuffle(choices);
   }
   // Create Quiz
   generateQuestions();
+  shuffle(questionsProcessed);
   let quiz = new Quiz(questionsProcessed);
   quizApp();
 
