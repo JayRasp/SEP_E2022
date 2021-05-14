@@ -13,7 +13,18 @@
     width: 50vw;
     padding: 1vh;
     text-align: center;
+    animation: 5s ease-in 0s infinite update;
 }
+
+@keyframes update {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1.00001);
+  }
+}
+
 .content h1 {
   margin-bottom: 3rem;
   text-transform: uppercase;
