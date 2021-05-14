@@ -3,8 +3,14 @@
 <script>
 $(function(){
         // Check the initial Postion of the Sticky Header
-        var stickyHeaderTop = $('.menu').offset().top;
-        $(window).resize(function(){stickyHeaderTop = $('.menu').offset().top;});
+        var stickyHeaderTop=$('.menu').offset().top;;
+        $(window).on("load",function(){
+          $(".menuspace").css('height',$(".menu").height());
+        });
+        $(window).resize(function(){
+          stickyHeaderTop = $('.menu').offset().top;
+          $(".menuspace").css({"height":$(".menu").height()});
+        });
 
         $(window).scroll(function(){
               if( $(window).scrollTop() > stickyHeaderTop ) {
