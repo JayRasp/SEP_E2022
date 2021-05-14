@@ -3,15 +3,14 @@
 
 .content {
     border-radius: 2vh;
-    /* min-height: 100vh; */
     background: #583b29;
     color: #dfe4ea;
     font-family: "Josefin Sans", sans-serif;
-    box-sizing: border-box;
     margin: auto;
     margin-top: 20vh;
     margin-bottom: 20vh;
-    width: 80vw;
+    min-width: 210px;
+    width: 50vw;
     padding: 1vh;
     text-align: center;
 }
@@ -108,7 +107,7 @@ img.header-logo_x{
 
 .menuItem, .button{
     transition: filter 0.2s ease;
-    background-color: var(--menuBackgroundColor);
+    background-color: inherit;
     font-size: 2vh;
     font-weight: bold;
     color: var(--menuTextColor);
@@ -119,15 +118,13 @@ img.header-logo_x{
     min-width: fit-content;
 }
 
-.menuItem:hover{
+.menuItem:hover, .button:hover{
   transition: filter 0.5s ease;
-  filter: saturate(90%);
+  filter: brightness(1.1);
 }
 
 .button{
   background-color: var(--buttonBackgroundColor);
-  color: var(--buttonTextColor);
-  outline: none;
 }
 
 .menuspace{
