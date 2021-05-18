@@ -117,8 +117,8 @@ our website through photos, animations, quizzes and feedback from former student
             <h3>Belval Plaza</h3>
           </div>
       </div>
-      <div class="tiles tile_hover_pointer">
-        <div class="tile" onclick="window.location='https://www.rockhal.lu/'">
+      <div class="tiles">
+        <div class="tile tile_hover_pointer" onclick="window.location='https://www.rockhal.lu/'">
           <img src="/img/Rockhal.png" alt="">
           <h3>Rockhal</h3>
         </div>
