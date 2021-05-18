@@ -3,7 +3,16 @@
 
 <head>
   <!--<meta http-equiv="refresh" content="5;URL='/'">!-->
-  <link rel="stylesheet" href="combined.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+
+    <link rel="stylesheet" href="combined.css">
+    <link rel="stylesheet" href="w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
 
 
 
@@ -11,253 +20,83 @@
 <body>
     <?php include "./header.php" ?>
   <div class="main" id="main">
-    <h1>Didn't melt fairer keepsakes since Fellowship elsewhere.</h1>
-<p>Woodlands payment Osgiliath tightening. Barad-dur follow belly comforts tender tough bell? Many that live deserve death. Some that die deserve life. Outwitted teatime grasp defeated before stones reflection corset seen animals Saruman's call?</p>
-<h2>Tad survive ensnare joy mistake courtesy Bagshot Row.</h2>
-<p>Ligulas step drops both? You shall not pass! Tender respectable success Valar impressive unfriendly bloom scraped? Branch hey-diddle-diddle pony trouble'll sleeping during jump Narsil.</p>
-<h3>North valor overflowing sort Iáve mister kingly money?</h3>
-<p>Curse you and all the halflings! Deserted anytime Lake-town burned caves balls. Smoked lthilien forbids Thrain?</p>
-<ul>
-  <li>Adamant.</li>
-  <li>Southfarthing!</li>
-  <li>Witch-king.</li>
-  <li>Precious.</li>
-  <li>Gaffer's!</li>
-</ul>
-<ul>
-  <li>Excuse tightening yet survives two cover Undómiel city ablaze.</li>
-  <li>Keepsakes deeper clouds Buckland position 21 lied bicker fountains ashamed.</li>
-  <li>Women rippling cold steps rules Thengel finer.</li>
-  <li>Portents close Havens endured irons hundreds handle refused sister?</li>
-  <li>Harbor Grubbs fellas riddles afar!</li>
-</ul>
-<h3>Narsil enjoying shattered bigger leaderless retrieve dreamed dwarf.</h3>
-<p>Ravens wonder wanted runs me crawl gaining lots faster! Khazad-dum surprise baby season ranks. I bid you all a very fond farewell.</p>
-<ol>
-  <li>Narsil.</li>
-  <li>Elros.</li>
-  <li>Arwen Evenstar.</li>
-  <li>Maggot's?</li>
-  <li>Bagginses?</li>
-</ol>
-<ol>
-  <li>Concerning Hobbits l golf air fifth bell prolonging camp.</li>
-  <li>Grond humble rods nearest mangler.</li>
-  <li>Enormity Lórien merry gravy stayed move.</li>
-  <li>Diversion almost notion furs between fierce laboring Nazgûl ceaselessly parent.</li>
-  <li>Agree ruling um wasteland Bagshot Row expect sleep.</li>
-</ol>
-<h3>Ere answering track forests shards roof!</h3>
-<p>Delay freezes Gollum. Let the Ring-bearer decide. Bagshot Row chokes pole pauses immediately orders taught éored musing three-day? Disease rune repel source fire Goblinses already?</p>
-<table>
-  <thead>
-    <tr>
-      <th></th>
-      <th>Dangers</th>
-      <th>Playing</th>
-      <th>Window</th>
-      <th>Meaning</th>
-      <th>Pace</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Current</td>
-      <td>living</td>
-      <td>odds</td>
-      <td>charged</td>
-      <td>heads</td>
-      <td>felt</td>
-    </tr>
-    <tr>
-      <td>Inn</td>
-      <td>climbing</td>
-      <td>destroying</td>
-      <td>overhead</td>
-      <td>roll</td>
-      <td>mud</td>
-    </tr>
-    <tr>
-      <td>Breath</td>
-      <td>relevant</td>
-      <td>éored</td>
-      <td>hinges</td>
-      <td>year</td>
-      <td>signed</td>
-    </tr>
-    <tr>
-      <td>Accept</td>
-      <td>threads</td>
-      <td>name</td>
-      <td>fitted</td>
-      <td>precious</td>
-      <td>attacked</td>
-    </tr>
-    <tr>
-      <td>Chief</td>
-      <td>sails</td>
-      <td>first-born</td>
-      <td>pottery</td>
-      <td>lever</td>
-      <td>antagonize</td>
-    </tr>
-    <tr>
-      <td>Unoccupied</td>
-      <td>victorious</td>
-      <td>means</td>
-      <td>lovely</td>
-      <td>humble</td>
-      <td>force</td>
-    </tr>
-  </tbody>
-  <tfoot>
-    <tr>
-      <td>kinsmen</td>
-      <td>give</td>
-      <td>walking</td>
-      <td>thousand</td>
-      <td>manners</td>
-      <td>burning</td>
-    </tr>
-  </tfoot>
-</table>
-<h4>Afraid smithy Fellowship debt carven hooks.</h4>
-<p>What about second breakfast? Nags runt near Lindir lock discover level? Andûril breathe waited flatten union.</p>
-<blockquote>
-  <p>You shall be the Fellowship of the Ring.</p>
-  <footer>—Númenor, <cite>sweeter burned verse</cite></footer>
-</blockquote>
-<h5>Should Shirelings extraordinary spends poison's willing enchantment.</h5>
-<p>I think we should get off the road. Penalty sight splintered Misty Mountain mithril? Unrest lasts rode league bears absence Bracegirdle athletic contract nice parent slowed?</p>
-<h6>Improve drops absolutely tight deceit potent Treebeard startled!</h6>
-<p>J.R.R. Tolkien 3000 uttered veins <q>roaring winds moaning flaming</q>. Meddle <ins>measure pure</ins> Samwise Gamgee business! <sub>Lied</sub> mistake Proudfoots pon. Instance 80 <dfn>morbid ceremonial plunge</dfn> Anor mad. Questions shells hangs noble Proudfoots <var>throws</var>. <mark>Rampart damage</mark> questions Chubbs 3000 conjurer? Single tempt peasants <strong>Bolg Athelas Mordor Wraiths Azog Undómiel</strong> mangler? <samp>Nori Giants Undómiel Rivendell</samp> spike posts took. Fool's Underhill boarded <cite>vanishing twilight unheard-of</cite>. <abbr>Presence</abbr> Dunland lamb lair. Barricade <sup>didn't</sup> feelings purring vine Morgoth. Distract Giants nearing champion <kbd>T</kbd>. Clothing titles quick bother <em>Arod Gloin Beren</em> troop? Balls crashing bastards <small>arrives precisely rascal</small> stubbornness Snowbourn. Hobbitses rose barren <a>strengths tested mirrors moonlight password</a> center? Remade <x-code>free filthy</x-code> breaking respect amuse Arod? Vengeance <del>Elessar Wolves</del> posts remain doorway said! <time>Suspects</time> fight Merry hungers locked yelp.</p>
-<hr>
-<dl>
-  <dt>Abandon</dt>
-  <dd>Tact flies disturber thinking hospitality Elros act vest handy ranks.</dd>
-  <dt>Devil</dt>
-  <dd>Boneses spilled Caradhras hungry pace lanterns glory haunted shone forging.</dd>
-  <dd>Unprotected Beorn's fireworks dream journey beacon dwells gnaws key.</dd>
-  <dt>Happened</dt>
-  <dd>Known wanna fifth Bill hell knew she scale.</dd>
-  <dd>Missing vanish taken colleague sway voice tricks 13 Grimbold.</dd>
-  <dd>Thereof skills kingsfoil innocent riding light Thorin Oakenshield won.</dd>
-</dl>
-<form>
-  <fieldset>
-    <legend>Blind kitchen</legend>
-    <div>
-      <label>Text</label>
-      <input type="text">
-    </div>
-    <div>
-      <label>Email</label>
-      <input type="email">
-    </div>
-    <div>
-      <label>Password</label>
-      <input type="password">
-    </div>
-    <div>
-      <label>Url</label>
-      <input type="url">
-    </div>
-    <div>
-      <label>Number</label>
-      <input type="number">
-    </div>
-    <div>
-      <label>Tel</label>
-      <input type="tel">
-    </div>
-    <div>
-      <label>Search</label>
-      <input type="search">
-    </div>
-    <div>
-      <label>Time</label>
-      <input type="time">
-    </div>
-    <div>
-      <label>Date</label>
-      <input type="date">
-    </div>
-    <div>
-      <label>Datetime-local</label>
-      <input type="datetime-local">
-    </div>
-    <div>
-      <label>Week</label>
-      <input type="week">
-    </div>
-    <div>
-      <label>Textarea</label>
-      <textarea></textarea>
-    </div>
-  </fieldset>
-  <fieldset>
-    <legend>Chasm mountains mountainside</legend>
-    <div>
-      <label>Month</label>
-      <input type="month">
-    </div>
-    <div>
-      <label><input type="checkbox" name="checkbox">sharp decided</label>
-    </div>
-    <div>
-      <label>Color</label>
-      <input type="color">
-    </div>
-    <div>
-      <label>File</label>
-      <input type="file">
-    </div>
-    <div>
-      <label>Hidden</label>
-      <input type="hidden">
-    </div>
-    <div>
-      <label>Image</label>
-      <input type="image">
-    </div>
-    <div>
-      <label>bags moment's darkest hastens highest spot</label>
-      <label><input type="radio" name="radio">sakes is</label>
-      <label><input type="radio" name="radio">tomb vines</label>
-      <label><input type="radio" name="radio">tricksy plain</label>
-    </div>
-    <div>
-      <label>Range</label>
-      <input type="range">
-    </div>
-    <div>
-      <input type="button" value="Button">
-    </div>
-    <div>
-      <input type="reset" value="Reset">
-    </div>
-    <div>
-      <input type="submit" value="Submit">
-    </div>
-    <button>works tilled entered</button>
-    <div>
-      <label>Select</label>
-      <select>
-        <optgroup label="dragon's poring squash">
-          <option>ending</option>
-          <option>always</option>
-          <option>spears</option>
-        </optgroup>
-        <optgroup label="suffer night's pain">
-          <option>diamond</option>
-          <option>unprotected</option>
-          <option>consider</option>
-        </optgroup>
-      </select>
-    </div>
-  </fieldset>
-</form>
+      <h1 class="pageTitle">Welcome to the website for the Belval Campus of the University of Luxembourg for ESCH2022</h1>
+      <h2>Discover and explore the world of the Belval campus of the University of Luxembourg in
+our website through photos, animations, quizzes and feedback from former students!
+</h2>
+<p>We offer the opportunity to play two different quizzes specially designed for people who are
+just looking to learn more about the university(FunQuiz) and one to learn more about Esch's culture.</p>
+<div style="
+    display: inline-flex;
+    justify-content: space-around;
+    width: -webkit-fill-available;
+    padding: 1vh 10vw;
+">
+<div class="quizTile" onclick="window.location='/quiz.php?category=culture'"><h1><span class="orange">C</span>ulture<i class="far fa-question-circle orange"></i></h1></a>
+</div>
+<div class="quizTile" onclick="window.location='/quiz.php?category=Science'">
+<h1><span class="orange">S</span>cience<i class="far fa-question-circle orange"></i></h1>
+</div>
+<div class="quizTile" onclick="window.location='/quiz.php?category=Basic'">
+<h1><span class="orange">B</span>asic<i class="far fa-question-circle orange"></i></h1>
+</div>
   </div>
+ <h2>The Campus</h2>
+ <div class="w3-content w3-display-container" style="max-width:800px">
+
+   <img class="mySlides" src="/img/Slideshow/image1.jpg" style="width:100%">
+   <img class="mySlides" src="/img/Slideshow/image2.jpg" style="width:100%">
+   <img class="mySlides" src="/img/Slideshow/image3.jpg" style="width:100%">
+   <img class="mySlides" src="/img/Slideshow/image4.jpg" style="width:100%">
+   <img class="mySlides" src="/img/Slideshow/image5.jpg" style="width:100%">
+   <img class="mySlides" src="/img/Slideshow/image6.jpg" style="width:100%">
+   <img class="mySlides" src="/img/Slideshow/image7.jpg" style="width:100%">
+
+   <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+     <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+   </div>
+ </div>
+
+ <script>
+ var slideIndex = 1;
+ showDivs(slideIndex);
+
+ function plusDivs(n) {
+   showDivs(slideIndex += n);
+ }
+
+ function currentDiv(n) {
+   showDivs(slideIndex = n);
+ }
+
+ function showDivs(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   var dots = document.getElementsByClassName("demo");
+   if (n > x.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = x.length}
+   for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+   }
+   x[slideIndex-1].style.display = "block";
+   dots[slideIndex-1].className += " w3-white";
+ }
+ </script>
+
+
+
+    </div>
 
 
   <footer>
