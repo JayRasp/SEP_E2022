@@ -39,14 +39,17 @@ our website through photos, animations, quizzes and feedback from former student
 </h2>
       <h3>We offer the opportunity to play two different quizzes specially designed for people who are just looking to learn more about the university(FunQuiz) and one to learn more about Esch's culture.</h3>
       <div class="tiles">
+      <div class="quizTile tile_hover_pointer" onclick="window.location='/quiz.php?category=uni'">
+        <h1><span class="orange">U</span>ni<i class="far fa-question-circle orange"></i></h1>
+      </div>
+      <div class="quizTile tile_hover_pointer" onclick="window.location='/quiz.php?category=Science'">
+        <h1><span class="orange">S</span>cience<i class="far fa-question-circle orange"></i></h1>
+      </div>
         <div class="quizTile tile_hover_pointer" onclick="window.location='/quiz.php?category=culture'">
           <h1><span class="orange">C</span>ulture<i class="far fa-question-circle orange"></i></h1></a>
         </div>
-        <div class="quizTile tile_hover_pointer" onclick="window.location='/quiz.php?category=Science'">
-          <h1><span class="orange">S</span>cience<i class="far fa-question-circle orange"></i></h1>
-        </div>
-        <div class="quizTile tile_hover_pointer" onclick="window.location='/quiz.php?category=Basic'">
-          <h1><span class="orange">B</span>asic<i class="far fa-question-circle orange"></i></h1>
+        <div class="quizTile tile_hover_pointer" onclick="window.location='/quiz.php?category=education'">
+          <h1><span class="orange">E</span>ducation<i class="far fa-question-circle orange"></i></h1>
         </div>
       </div>
       <h2>The Campus</h2>

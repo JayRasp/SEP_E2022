@@ -41,9 +41,10 @@ $(function(){
 </div>
   <div class="menu" id="menu">
     <a href="/" class="menuItem"> Home</a>
-      <a href="/quiz.php?category=basic" class="menuItem"> Quiz1</a>
-        <a href="/quiz.php?category=science" class="menuItem"> Quiz2</a>
-          <a href="/quiz.php?category=culture" class="menuItem"> Quiz3</a>
+    <a href="/quiz.php?category=basic" class="menuItem"><span class="orange">U</span>ni</a>
+    <a href="/quiz.php?category=science" class="menuItem"><span class="orange">S</span>cience</a>
+    <a href="/quiz.php?category=culture" class="menuItem"><span class="orange">C</span>ulture</a>
+    <a href="/quiz.php?category=education" class="menuItem"><span class="orange">E</span>ducation</a>
             <a href="quizinfo.php" class="menuItem"> Quiz Info</a>
   </div>
   <div class="menuspace"></div>
