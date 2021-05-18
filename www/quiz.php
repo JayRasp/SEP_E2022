@@ -16,7 +16,7 @@
 <div class="content">
   <div class="container">
     <div id="quiz">
-      <h1><span>Q</span>uiz <i class="far fa-question-circle"></i></h1>
+      <h1><span class="orange">Q</span>uiz <i class="far fa-question-circle orange"></i></h1>
 
       <h2 id="question" class="question"></h2>
 

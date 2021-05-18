@@ -252,16 +252,27 @@ td, th{
 }
 
 .pageTitle{
-  text-align: center;
-  margin-bottom: 4vh;
-  background-color: darkred;
+    text-align: center;
+    margin-bottom: 4vh;
+    background-color: #80808036;
     border-radius: 2rem;
-    color: white;
+    color: black;
     padding: 2vh;
 }
 
 .main h1, .main h2{
   text-decoration: none;
+}
+
+.main h2{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2vh;
+    text-align: center;
+    background: darkred;
+    color: white;
+    padding: 0.5vh 0.5vw;
+    border-radius: 10rem;
 }
 
 .quizTile {
@@ -273,11 +284,64 @@ td, th{
     width: fit-content;
     padding: 1vh;
     text-align: center;
-    margin:auto;
     cursor: pointer;
+    transition: transform 0.1s ease-in;
 }
 
 
-.quizTile:hover {
+.quizTile:hover, .tile:hover{
   transform: scale(1.05);
+  transition: transform 0.1s ease-in;
+}
+.tile_hover_pointer:hover{
+  cursor: pointer;
+}
+
+.tile{
+transition: transform 0.1s ease-in;
+    border-radius: 1vh;
+    text-align: center;
+    border-style: solid;
+    border-color: #b5b1b1;
+    padding: 1vh 1vw;
+    background-color: white;
+}
+.tile img{
+    vertical-align: middle;
+    border-style: solid;
+    border-width: thin;
+    border-color: dimgrey;
+    border-radius: 0.5vh;
+}
+
+.tile h3,.main h3{
+  text-decoration: none;
+}
+
+.main h3{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+.main div.tiles{
+display: inline-flex;
+justify-content: space-around;
+width: -webkit-fill-available;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.history_tile{
+  width: 80rem;
+  background-image: url("/img/hexagon-background-942982_1280.png");
+  padding: 0;
+}
+
+.tile, .quizTile{
+  margin: 1vh 1vw;
+}
+
+.blurred_background{
+    backdrop-filter: blur(3px) brightness(1.05);
+    display: flow-root;
 }
