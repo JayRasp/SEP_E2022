@@ -10,7 +10,7 @@
     margin-top: 20vh;
     margin-bottom: 20vh;
     min-width: 210px;
-    width: 50vw;
+    width: 70vw;
     padding: 1vh;
     text-align: center;
     animation: 5s ease-in 0s infinite update;
@@ -30,7 +30,7 @@
   text-transform: uppercase;
   font-size: 3rem;
 }
-.content h1 span, body h1 i {
+.orange {
   color: #ffa502;
 }
 .content h3 {
@@ -249,4 +249,35 @@ td, th{
 .hint a{
   text-decoration: none;
   font-size: 3vh;
+}
+
+.pageTitle{
+  text-align: center;
+  margin-bottom: 4vh;
+  background-color: darkred;
+    border-radius: 2rem;
+    color: white;
+    padding: 2vh;
+}
+
+.main h1, .main h2{
+  text-decoration: none;
+}
+
+.quizTile {
+    border-radius: 2vh;
+    background: #583b29;
+    color: #dfe4ea;
+    font-family: "Josefin Sans", sans-serif;
+    min-width: 210px;
+    width: fit-content;
+    padding: 1vh;
+    text-align: center;
+    margin:auto;
+    cursor: pointer;
+}
+
+
+.quizTile:hover {
+  transform: scale(1.05);
 }
