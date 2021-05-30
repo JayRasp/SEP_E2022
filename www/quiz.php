@@ -66,13 +66,9 @@
       $conn = new mysqli($host, $user, $pass, $dbname);
 
       if ($conn->connect_error) {
-          console_log("Connection failed: " . $conn->connect_error);
           $error=true;
-      }else{
-          console_log("Connected to MySQL successfully!");
       }
       $category = ucfirst(htmlspecialchars($_GET['category']));
-      console_log("Category=" . $category);
 
       $questions= array();
       if(!$error){
