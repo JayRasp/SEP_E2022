@@ -45,6 +45,5 @@ $(function(){
     <a href="/quiz.php?category=science" class="menuItem"><span class="orange">S</span>cience</a>
     <a href="/quiz.php?category=culture" class="menuItem"><span class="orange">C</span>ulture</a>
     <a href="/quiz.php?category=education" class="menuItem"><span class="orange">E</span>ducation</a>
-            <a href="quizinfo.php" class="menuItem"> Quiz Info</a>
   </div>
   <div class="menuspace"></div>
