@@ -111,21 +111,21 @@ our website through photos, animations, quizzes and feedback from former student
 
       <h2>Nearby POI's</h2>
       <div class="tiles">
-        <div class="tile tile_hover_pointer" onclick="window.location='https://llc.uni.lu/'">
+        <div class="tile tile_hover_pointer" onclick="window.open('https://llc.uni.lu/')">
           <img src="/img/LLC.png" alt="">
           <h3>Luxembourg Learning Center</h3>
         </div>
-          <div class="tile tile_hover_pointer" onclick="window.location='https://belvalshopping.lu/'">
+          <div class="tile tile_hover_pointer" onclick="window.open('https://belvalshopping.lu/')">
             <img src="/img/BelvalPlaza.png" alt="">
             <h3>Belval Plaza</h3>
           </div>
       </div>
       <div class="tiles">
-        <div class="tile tile_hover_pointer" onclick="window.location='https://www.rockhal.lu/'">
+        <div class="tile tile_hover_pointer" onclick="window.open('https://www.rockhal.lu/')">
           <img src="/img/Rockhal.png" alt="">
           <h3>Rockhal</h3>
         </div>
-          <div class="tile tile_hover_pointer" onclick="window.location='https://industrie.lu/CNCI.html'">
+          <div class="tile tile_hover_pointer" onclick="window.open('https://industrie.lu/CNCI.html')">
             <img src="/img/CNCI.png" alt="">
             <h3>National Center for Industrial Culture</h3>
           </div>
