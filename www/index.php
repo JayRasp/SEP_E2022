@@ -37,7 +37,7 @@
       <h2>Discover and explore the world of the Belval campus of the University of Luxembourg in
 our website through photos, animations, quizzes and feedback from former students!
 </h2>
-      <h3>We offer the opportunity to play two different quizzes specially designed for people who are just looking to learn more about the university(FunQuiz) and one to learn more about Esch's culture.</h3>
+      <h3>We offer the opportunity to play four different quizzes specially designed for people who are just looking to learn more about the university, about Esch's culture, about the science at the University of Luxembourg and it's education.</h3>
       <div class="tiles">
       <div class="quizTile tile_hover_pointer" onclick="window.location='/quiz.php?category=uni'">
         <h1><span class="orange">U</span>ni<i class="far fa-question-circle orange"></i></h1>
