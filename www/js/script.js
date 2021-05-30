@@ -1,15 +1,32 @@
 class Question {
-    constructor(text, choices, answer) {
+    constructor(text, choices) {
       this.text = text;
       this.choices = choices;
-      this.answer = answer;
+      this.answer = choices[0];
     }
     isCorrectAnswer(choice) {
       return this.answer === choice;
     }
   }
   //utf8_encode('string') needed to display 'à' , 'é', etc...
+  function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
 
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+  // Pick a remaining element...
+  randomIndex = Math.floor(Math.random() * currentIndex);
+  currentIndex -= 1;
+
+  // And swap it with the current element.
+  temporaryValue = array[currentIndex];
+  array[currentIndex] = array[randomIndex];
+  array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+  }
 
   //console.log(questions);
 
@@ -18,11 +35,13 @@ class Question {
       this.score = 0;
       this.questions = questions;
       this.currentQuestionIndex = 0;
+      this.answers= new Array(questions.length-1);
     }
     getCurrentQuestion() {
       return this.questions[this.currentQuestionIndex];
     }
     guess(answer) {
+      this.answers[this.currentQuestionIndex] = [this.questions[this.currentQuestionIndex].text , this.questions[this.currentQuestionIndex].answer, answer];
       if (this.getCurrentQuestion().isCorrectAnswer(answer)) {
         this.score++;
       }
@@ -43,7 +62,34 @@ class Question {
     endQuiz: function() {
       endQuizHTML = `
         <h1>Quiz finished !</h1>
-        <h3> Your score : ${quiz.score} / ${quiz.questions.length}</h3>`;
+        <h3> Your score : ${quiz.score} / ${quiz.questions.length}</h3>
+        <h2>Summary:</h2>
+        <table>
+  <tr>
+    <th>Question</th>
+    <th>Correct answer</th>
+    <th>Your answer</th>
+  </tr>`;
+  quiz.answers.forEach(function(answer){
+    var style;
+    if(answer[1]==answer[2]){
+      style=`style="
+    color: lawngreen;
+    border-color: #dfe4ea;"`
+  } else{
+    style=`style="
+  color: red;
+  border-color: #dfe4ea;"`
+  }
+  endQuizHTML+=`
+  <tr>
+    <td>${answer[0]}</td>
+      <td>${answer[1]}</td>
+        <td ${style}>${answer[2]}</td>
+  </tr>
+  `;});
+  endQuizHTML+=`
+</table>`;
       this.elementShown("quiz", endQuizHTML);
     },
     notExistingQuiz: function() {
@@ -61,24 +107,7 @@ class Question {
     choices: function() {
       let choices = quiz.getCurrentQuestion().choices;
 
-      function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
 
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-
-  return array;
-}
 shuffle(choices);
 
       guessHandler = (id, guess) => {
@@ -120,11 +149,12 @@ shuffle(choices);
   generateQuestions = () => {
     for(var i=0;i<questions.length;i++)
     {
-      questionsProcessed.push(new Question(questions[i][0],[questions[i][1],questions[i][2],questions[i][3],questions[i][4]],questions[i][1]));
+      questionsProcessed.push(new Question(questions[i][0],[questions[i][1],questions[i][2],questions[i][3],questions[i][4]]));
     }
   }
   // Create Quiz
   generateQuestions();
+  shuffle(questionsProcessed);
   let quiz = new Quiz(questionsProcessed);
   quizApp();
 

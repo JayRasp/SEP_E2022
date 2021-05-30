@@ -3,24 +3,34 @@
 
 .content {
     border-radius: 2vh;
-    /* min-height: 100vh; */
     background: #583b29;
     color: #dfe4ea;
     font-family: "Josefin Sans", sans-serif;
-    box-sizing: border-box;
     margin: auto;
     margin-top: 20vh;
     margin-bottom: 20vh;
-    width: 80vw;
+    min-width: 210px;
+    width: 70vw;
     padding: 1vh;
     text-align: center;
+    animation: 5s ease-in 0s infinite update;
 }
+
+@keyframes update {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1.00001);
+  }
+}
+
 .content h1 {
   margin-bottom: 3rem;
   text-transform: uppercase;
   font-size: 3rem;
 }
-.content h1 span, body h1 i {
+.orange {
   color: #ffa502;
 }
 .content h3 {
@@ -87,7 +97,7 @@
 
 
 img.header-logo_e22, img.header-logo_x, img.header-logo_unilu{
-  height:6vh;
+  height:4vh;
 }
 img.header-logo_x{
   margin-left: 1vw;
@@ -108,8 +118,8 @@ img.header-logo_x{
 
 .menuItem, .button{
     transition: filter 0.2s ease;
-    background-color: var(--menuBackgroundColor);
-    font-size: 2vmin;
+    background-color: inherit;
+    font-size: 2vh;
     font-weight: bold;
     color: var(--menuTextColor);
     padding: 2vh 2vw 2vh 2vw;
@@ -119,19 +129,16 @@ img.header-logo_x{
     min-width: fit-content;
 }
 
-.menuItem:hover{
+.menuItem:hover, .button:hover{
   transition: filter 0.5s ease;
-  filter: saturate(90%);
+  filter: brightness(1.1);
 }
 
 .button{
   background-color: var(--buttonBackgroundColor);
-  color: var(--buttonTextColor);
-  outline: none;
 }
 
 .menuspace{
-  height: 6.4vh;
   display: none;
 }
 
@@ -181,12 +188,17 @@ body{
 
 table{
   border-spacing: 0px;
+  display: initial;
+}
+
+td{
+  text-align: left;
 }
 
 
 td, th{
   padding: .5vh .5vw .5vh .5vw;
-  border-style: solid;
+  border-bottom-style: solid;
   border-width: thin;
 }
 
@@ -242,4 +254,99 @@ td, th{
 .hint a{
   text-decoration: none;
   font-size: 3vh;
+}
+
+.pageTitle{
+    text-align: center;
+    margin-bottom: 4vh;
+    background-color: #80808036;
+    border-radius: 2rem;
+    color: black;
+    padding: 2vh;
+}
+
+.main h1, .main h2{
+  text-decoration: none;
+}
+
+.main h2{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 2vh;
+    text-align: center;
+    background: darkred;
+    color: white;
+    padding: 0.5vh 0.5vw;
+    border-radius: 10rem;
+}
+
+.quizTile {
+    border-radius: 2vh;
+    background: #583b29;
+    color: #dfe4ea;
+    font-family: "Josefin Sans", sans-serif;
+    min-width: 210px;
+    width: fit-content;
+    padding: 1vh;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.1s ease-in;
+}
+
+
+.quizTile:hover, .tile:hover{
+  transform: scale(1.05);
+  transition: transform 0.1s ease-in;
+}
+.tile_hover_pointer:hover{
+  cursor: pointer;
+}
+
+.tile{
+transition: transform 0.1s ease-in;
+    border-radius: 1vh;
+    text-align: center;
+    border-style: solid;
+    border-color: #b5b1b1;
+    padding: 1vh 1vw;
+    background-color: white;
+}
+.tile img{
+    vertical-align: middle;
+    border-style: solid;
+    border-width: thin;
+    border-color: dimgrey;
+    border-radius: 0.5vh;
+}
+
+.tile h3,.main h3{
+  text-decoration: none;
+}
+
+.main h3{
+    margin-right: 2vw;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+.main div.tiles{
+display: inline-flex;
+justify-content: space-around;
+width: -webkit-fill-available;
+flex-direction: row;
+flex-wrap: wrap;
+}
+.history_tile{
+  width: 80rem;
+  background-image: url("/img/hexagon-background-942982_1280.png");
+  padding: 0;
+}
+
+.tile, .quizTile{
+  margin: 1vh 1vw;
+}
+
+.blurred_background{
+    backdrop-filter: blur(3px) brightness(1.05);
+    display: flow-root;
 }

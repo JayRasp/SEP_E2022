@@ -3,8 +3,14 @@
 <script>
 $(function(){
         // Check the initial Postion of the Sticky Header
-        var stickyHeaderTop = $('.menu').offset().top;
-        $(window).resize(function(){stickyHeaderTop = $('.menu').offset().top;});
+        var stickyHeaderTop=$('.menu').offset().top;;
+        $(window).on("load",function(){
+          $(".menuspace").css('height',$(".menu").height());
+        });
+        $(window).resize(function(){
+          stickyHeaderTop = $('.menu').offset().top;
+          $(".menuspace").css({"height":$(".menu").height()});
+        });
 
         $(window).scroll(function(){
               if( $(window).scrollTop() > stickyHeaderTop ) {
@@ -35,9 +41,9 @@ $(function(){
 </div>
   <div class="menu" id="menu">
     <a href="/" class="menuItem"> Home</a>
-      <a href="/quiz.php?category=basic" class="menuItem"> Quiz1</a>
-        <a href="/quiz.php?category=science" class="menuItem"> Quiz2</a>
-          <a href="/quiz.php?category=culture" class="menuItem"> Quiz3</a>
-            <a href="quizinfo.php" class="menuItem"> Quiz Info</a>
+    <a href="/quiz.php?category=basic" class="menuItem"><span class="orange">U</span>ni</a>
+    <a href="/quiz.php?category=science" class="menuItem"><span class="orange">S</span>cience</a>
+    <a href="/quiz.php?category=culture" class="menuItem"><span class="orange">C</span>ulture</a>
+    <a href="/quiz.php?category=education" class="menuItem"><span class="orange">E</span>ducation</a>
   </div>
   <div class="menuspace"></div>

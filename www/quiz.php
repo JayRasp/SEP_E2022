@@ -16,7 +16,7 @@
 <div class="content">
   <div class="container">
     <div id="quiz">
-      <h1><span>Q</span>uiz <i class="far fa-question-circle"></i></h1>
+      <h1><span class="orange">Q</span>uiz <i class="far fa-question-circle orange"></i></h1>
 
       <h2 id="question" class="question"></h2>
 
@@ -44,6 +44,7 @@
 
     </div>
   </div>
+  <div style="display:flex"><a href="feedback.php" onclick="window.open('feedback.php','popup','width=600,height=720'); return false;" target="popup" class="button" style="margin:auto">Feedback</a></div>
 </div>
 
 
@@ -66,13 +67,9 @@
       $conn = new mysqli($host, $user, $pass, $dbname);
 
       if ($conn->connect_error) {
-          console_log("Connection failed: " . $conn->connect_error);
           $error=true;
-      }else{
-          console_log("Connected to MySQL successfully!");
       }
       $category = ucfirst(htmlspecialchars($_GET['category']));
-      console_log("Category=" . $category);
 
       $questions= array();
       if(!$error){

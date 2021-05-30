@@ -13,7 +13,7 @@ function console_log($output, $with_script_tags = true) {
 
   <head>
     <!--<meta http-equiv="refresh" content="5;URL='/'">!-->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="combined.css">
   </head>
 
   <body>
@@ -34,7 +34,7 @@ function console_log($output, $with_script_tags = true) {
         }
 
         if(!$error){
-            $sql = "SELECT COUNT(*) FROM questions";
+            $sql = "INSERT INTO `feedback` (`id`, `firstname`, `lastname`, `e-mail`, `type`, `comment`) VALUES (NULL, 'first', 'last', 'test@test.xd', '1', 'Subject bla bla');";
             $result = $conn->query($sql);
             console_log($result);
         }
@@ -68,8 +68,26 @@ if(!$error){
 </br>
 <div class="alignCenter">
   <a class="button" href="quiz.php?category=all">Test</a>
+    <a class="button" href=":8080">phpMyAdmin</a>
 </div>
 </div>
+
+<script>
+//
+// delegate event for performance, and save attaching a million events to each anchor
+document.addEventListener('click', function(event) {
+  var target = event.target;
+  if (target.tagName.toLowerCase() == 'a')
+  {
+      var port = target.getAttribute('href').match(/^:(\d+)(.*)/);
+      if (port)
+      {
+         target.href = window.location.origin;
+         target.port = port[1];
+      }
+  }
+}, false);
+</script>
         <footer>
 
         </footer>
