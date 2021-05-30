@@ -35,11 +35,13 @@ class Question {
       this.score = 0;
       this.questions = questions;
       this.currentQuestionIndex = 0;
+      this.answers= new Array(questions.length-1);
     }
     getCurrentQuestion() {
       return this.questions[this.currentQuestionIndex];
     }
     guess(answer) {
+      this.answers[this.currentQuestionIndex] = [this.questions[this.currentQuestionIndex].text , this.questions[this.currentQuestionIndex].answer, answer];
       if (this.getCurrentQuestion().isCorrectAnswer(answer)) {
         this.score++;
       }
@@ -60,7 +62,34 @@ class Question {
     endQuiz: function() {
       endQuizHTML = `
         <h1>Quiz finished !</h1>
-        <h3> Your score : ${quiz.score} / ${quiz.questions.length}</h3>`;
+        <h3> Your score : ${quiz.score} / ${quiz.questions.length}</h3>
+        <h2>Summary:</h2>
+        <table>
+  <tr>
+    <th>Question</th>
+    <th>Correct answer</th>
+    <th>Your answer</th>
+  </tr>`;
+  quiz.answers.forEach(function(answer){
+    var style;
+    if(answer[1]==answer[2]){
+      style=`style="
+    color: lawngreen;
+    border-color: #dfe4ea;"`
+  } else{
+    style=`style="
+  color: red;
+  border-color: #dfe4ea;"`
+  }
+  endQuizHTML+=`
+  <tr>
+    <td>${answer[0]}</td>
+      <td>${answer[1]}</td>
+        <td ${style}>${answer[2]}</td>
+  </tr>
+  `;});
+  endQuizHTML+=`
+</table>`;
       this.elementShown("quiz", endQuizHTML);
     },
     notExistingQuiz: function() {

@@ -188,12 +188,17 @@ body{
 
 table{
   border-spacing: 0px;
+  display: initial;
+}
+
+td{
+  text-align: left;
 }
 
 
 td, th{
   padding: .5vh .5vw .5vh .5vw;
-  border-style: solid;
+  border-bottom-style: solid;
   border-width: thin;
 }
 
