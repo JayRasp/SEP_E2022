@@ -34,7 +34,7 @@ function console_log($output, $with_script_tags = true) {
         }
 
         if(!$error){
-            $sql = "SELECT COUNT(*) FROM questions";
+            $sql = "INSERT INTO `feedback` (`id`, `firstname`, `lastname`, `e-mail`, `type`, `comment`) VALUES (NULL, 'first', 'last', 'test@test.xd', '1', 'Subject bla bla');";
             $result = $conn->query($sql);
             console_log($result);
         }

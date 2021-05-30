@@ -45,6 +45,7 @@
     </div>
   </div>
 </div>
+<div style="display:flex"><a href="feedback.php" onclick="window.open('feedback.php','popup','width=600,height=720'); return false;" target="popup" class="button" style="margin:auto">Feedback</a></div>
 
 
   <?php
