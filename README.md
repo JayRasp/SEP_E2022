@@ -1,4 +1,5 @@
 # Group 5
+## Access the site [here](http://sep-e2022.ddns.net/).
 # SEP_E2022
 GitHub for our Software Engineering Project files.
 
